@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>MVSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="myScripts.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(menu).on('click', function(e) {
+				e.preventDefault();
+				if ($(window).width() < 879) {
+					menu.slideToggle();
+				}
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+	<div class=content>
+	<script>document.body.className += ' fade-out';</script>
+	<nav class=nav1>
+			<ul id="navBarLinks" class="navColor">
+				<li class="nav active"><a id="one" href="#mission">Mission</a></li>
+
+				<li class="nav active"><a id"two" href="#school">The School</a></li>
+				<li class="nav active"><a id="three" href="#awards">Achievements &amp; Awards</a></li>
+				<li class="nav active"><a href="#costs">Costs</a></li>
+				<li class="nav active"><a href="#founder">About The Founder</a></li>
+				<li class="nav active"><a href="#contact">Contact</a></li>
+				<li class="nav active" id="t"><a  id="t1" href="#donate">Donate</a></li>
+			</ul>
+			<a href="#" id="pull"></a>
+		</nav>
+
+    <header>
+        <h1>Mandala Vikalangula Samkshema Sangham</h1>
+        <h2>School for the Welfare of the Disabled</h2>
+    </header>
+    
+		
+    <section id="mission">
+        <h3>Mission</h3>
+
+        <p class="quote">
+            " To provide an integrated, immersive, and, most importantly,  
+            inclusive education for all disbaled children "
+        </p>
+
+        <p>
+            By promoting the disabled childrens' self-confidence through
+            education, the school primarily aims to motivate students and show
+            them disability is hardly a disadvatage. MVSS provides education from 
+            I through X (1st to 10th Grade). Moreover, boarding, meals, 
+            books, and schooling are all provided free of cost; the school 
+            runs purely on donations. By and large, the school gives disabled 
+            children from rural areas a normal, quality education as well as
+            day-to-day sustenance. This idea that disability is ability is what
+            makes this school so special, effective, and worth contributing to.  
+        </p>
+		<div id="images">
+			<img src="Mission1.jpg" alt="School Building" title="School Building" width="300">
+			<img src="Mission2.jpg" alt="Studying Kids" title="Studying Kids" width="300">
+		</div>
+
+    </section> 
+
+    <section id="school">
+        <h3>The School</h3>
+		<div id="videoWrapper">
+			<iframe src="https://www.youtube.com/embed/pmI2fHo6A3I" frameborder="0" align="middle" allowfullscreen></iframe>
+		</div>
+        <p>
+            The school, founded in 1998 with roughly 30 students, has now expanded 
+			to have over 300. 
+        </p>
+
+    </section>
+
+	<!--Slideshow
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="test.jpg" style="width:100%">
+				<div class="text">Caption Text</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="HeaderBackground2.jpg" style="width:100%">
+				<div class="text">Caption Two</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="HeadBackground.jpg" style="width:100%">
+				<div class="text">Caption Three</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		
+	-->
+
+    <section id="awards">
+        <h3>Achievements &amp; Awards</h3>
+
+		<ul>
+			<li>Awarded 
+				<a class="link" href="http://www.thehindu.com/2005/12/03/stories/2005120310560300.htm" target="blank">
+				Best Instituiton </a> for Multiple Disabilities.</li>
+			<li>
+				Disabled Students stood 1st in State Level sports in 2010-11 &amp; 2011-12.
+			</li>
+			<li>
+				Worked with the National Child Labor Project to identify 698 child laborers and 
+				admit them in regular schools.
+			</li>
+			<li>
+				In 2008-2009 Panchadria Naresh got 536 marks in his 10th Class, and was later 
+				admitted into IIT.
+			</li>
+			<li>
+				In 2007-2008 Venkalakshmi got 513 marks in 10th Class, and was also later 
+				admittied into IIT.
+			</li>
+			<li>
+				Most importantly, the school is providing free, inclusive, quality education
+				&amp; boarding for disabled, as well as normal, children. Over 300 students
+				today are receving education from the school, around 100 being disabled. This
+				mixed environemnt is another reason why this school is so special.
+			</li>
+		</ul> 
+
+
+    </section> 
+
+    <section id="costs">
+        <h3>Costs for Sponsorship &amp; Donation</h3>
+
+		<ul>
+			<li>
+				Child with Disability Sponsorship is ₹10,000 per year for education 
+				&amp; boarding.
+			</li>
+			<li>
+				Fixed Deposit of ₹20,000; The interest can pay for a meal once a year.
+			</li>
+			<li>
+				₹2,500 to sponsor a meal (lunch or dinner) for 80 disabled children.
+			</li>
+		</ul>
+
+		<p id="none">Nonetheless, any and all donations are welcome and can be used for a variety
+			of purposes including:
+			<ul id="padList">
+				<li>A compound wall</li>
+				<li>Extension of school (including bigger classrooms)</li>
+				<li>Blankets, Mats, and Towels</li>
+				<li>Stationary, Books and Chairs</li>
+				<li>Tableware and Kitchenware</li>
+			</ul>
+		</p>
+
+
+    </section> 
+
+    <section id="donate">
+        <h3>Donate</h3>
+		<p>Donation can be made either through PayPal or Bank Transfer</p>
+		<p>Bank Details are:<br>
+		State Bank of India <br> 
+		A/C No. 10849855083 <br>
+		Maharanipeta, Visakha </p>
+		<p>Add PayPal Here</p>
+    </section> 
+
+	 <section id="founder">
+        <h3>About the Founder</h3>
+
+        <p>
+            MVSS was founded by Mr.Potnuru Satya Tuirupathi Rao Patnaik,
+            more commonly known as just Mr.Patnaik. Born disabled, he had
+            an arduous childhood, facing difficulty completing even Primary
+            School due to the lack of facilities and welfare schemes. These 
+            hardships are what spurred him to voice for the empowerement of 
+            Persons With Disabilities (PWDs). He believes that illiteracy is
+            the chief cause for the belittlement of the disabled in current
+			society. In order to counteract this, MVSS and the school was
+			founded in 1998. The school was called the "Integrated Vikalangula 
+			Ashrama Patasala," (translation), it consists of classes I through X 
+			(1st to 10th grade). It is now formally recognised by the Department 
+			of Education (Govt. of AP). 	
+        </p>
+
+		<h4>Awards</h4>
+			<ul>
+				<li>
+					Many awards across the board from neighbourhood to national level
+					for empowerement of fellow disbaled.
+				</li>
+				<li>
+					In 2006, he received the best award in the national level; it was 
+					presented to him by then president Shri APJ Abdul Kalam.
+				</li>
+				<li>More awards</li>
+			</ul> 
+    </section> 
+
+    <section id="contact">
+		<h3>Contact Us</h3>
+
+
+		<h5>Address</h5>
+		<p> 
+			<b>Mandala Vikalangula Samkshema Sangham</b> <br>
+			Achutapuram <br>
+			Visakhapatnam (Dist) A.P, 531011 
+		</p>
+
+		<h5>Phone</h5>
+		<p>
+			Landline: 08924-253623 <br>
+			Cell: 9989719158/7396618227
+		</p>
+
+
+		<h5>E-mail</h5>
+		<p><a class="link" href=mailto:mvss.atp@gmail.com>mvss.atp@gmail.com</a></p>
+	</section>
+	<footer>
+
+    </footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:300,500');
+
+/* General CSS Start */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    background: -webkit-linear-gradient( #0FB493, #20e3b2, #0F9FB4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0FB493, #20e3b2, #0F9FB4);
+}
+#back {
+    background: repeating-linear-gradient(#0Fb493 20%, #20E3B2 10%,#0F9Fb4 40%);
+}
+
+body {
+  color: #fff;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 70%;
+-webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+    opacity: 1;
+    transition: 2.5s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+/* General CSS End */
+
+/* Header CSS Start */
+header {
+    height: 1000px;
+    padding: 20px 0 70px 0;
+    background-color: #C9E1C1	;
+   background: #0cebeb;  /* fallback for old browsers */
+background: -webkit-linear-gradient( #0FB493, #20e3b2, #0F9FB4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0FB493, #20e3b2, #0F9FB4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    /*background-attachment: fixed, fixed, fixed, scroll;
+    background-repeat: repeat-y;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-size: 100%;
+    */
+        text-align: center;
+    }
+
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  color: #152737;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-size: 4.8em;
+  text-align: center;
+  /*text-transform: uppercase;*/
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+h1::before {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  content: "";
+  width: 80px;
+  height: 80px;
+  margin: -20px 20px 470px 0;
+  /* background: url(enso.svg); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.6;
+}
+/* Header CSS End */
+
+/* Navigation CSS Start */
+#t {
+    background-color: #ffff00;
+    float: right;
+}
+
+#t1:hover {
+    color:white;
+}
+#t1 {
+    color: black;
+}
+ul.navColor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 1200ms linear;
+
+
+}
+ul.navColor {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #152737;
+}
+
+ul.navColor li {float: left;}
+
+ul.navColor li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navColor li a:hover:not(.active) {background-color: #152737;}
+
+ul.navColor li a.active {background-color: #4CAF50;}
+
+ul.navColor li.right {float: right;}
+
+#images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+img {
+    margin: 10px;
+}
+
+iframe{
+    width: 853px;
+    height: 480px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav a#pull {
+  display: none;
+} 
+@media screen and (max-width: 1290px){
+    h1 {
+        font-size: 3.5em;
+    }
+      #mission { 
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+    #school { 
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+    #costs {
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+     #donate {
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+     #founder {
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+     #contact {
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+
+     #awards {
+        padding: 20px 100px 40px 100px;
+        background-color: black;
+    }
+}
+
+
+@media screen and (max-width: 879px){
+   /*.navColor { display: none;}*/
+    ul.navColor li.right, 
+    ul.navColor li {float: none;}
+     ul.navColor li a {padding:5px 5px;}
+    #t { float: none; }
+    h1 {
+        height: 500px;
+        font-size: 3.5em;
+        padding:2px 2px;
+    }
+    h1::before {
+        margin: 20px 20px 270px 0;
+    }
+
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+
+    nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav a#pull {
+    display: block;
+    background-color: #152737;
+    width: 100%;
+    height: 39px;
+    margin-bottom: 20px;
+    transition-duration: 1s;
+    position: fixed;
+    top:0px;
+    left: 0px;
+  }
+  nav a#pull:after {
+    content:"";
+    background: url('menu-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: fixed;
+    left: 15px;
+    top: 10px;
+  }
+  #one {
+      margin-top: 30px;
+  }
+}
+@media screen and (max-width: 600px){
+    iframe {
+        width:280px;
+        height: 157.5px;
+    }
+}
+
+
+/* Navigation CSS End */
+
+h3, h4{
+  margin: 2.2em 0 0 0;
+  color: #152737;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3em;
+  font-weight: normal;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  padding-bottom: 20px;
+}
+h4 {
+    font-size: 1.7rem;
+}
+h5 {
+    color: #152737;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/*General Section CSS*/
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 300px 100px 300px;
+}
+#mission {
+    background-color:#0F9FB4;
+    background: -webkit-linear-gradient( #0F9FB4, #0FB493);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0F9FB4, #0FB493); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 5px 10px 0px 10px;
+}
+
+p {
+    font-size: 1.05rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.caption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.quote {
+    padding: 20px;
+    font-style: italic;
+}
+
+#school {
+    background-color: #0FB493;
+    background: -webkit-linear-gradient(#0FB493,  #0F9FB4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0FB493,  #0F9FB4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#awards {
+    background-color:#0F9FB4;
+    background: -webkit-linear-gradient( #0F9FB4, #0FB493);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0F9FB4, #0FB493); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#costs {
+     background-color: #0FB493;
+      background: -webkit-linear-gradient(#0FB493,  #0F9FB4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0FB493,  #0F9FB4);
+}
+
+#donate {
+    background-color:#0F9FB4;
+    background: -webkit-linear-gradient( #0F9FB4, #0FB493);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0F9FB4, #0FB493); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#founder {
+    background-color: #0FB493;
+     background: -webkit-linear-gradient(#0FB493,  #0F9FB4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0FB493,  #0F9FB4);
+}
+
+#contact {
+    background-color:#0F9FB4;
+    background: -webkit-linear-gradient( #0F9FB4, #0FB493);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient( #0F9FB4, #0FB493); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ul {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
+    font-weight: 300;
+}
+#none {
+    text-align: left;
+}
+#padList {
+    padding-left: 70px;
+}
+
+/* Link Formatting */
+.link {
+    text-decoration: underline;
+    color:#fff;
+}
+.link:hover {
+    color:#E4C580
+}
+b {
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+/* Slideshow
+* {box-sizing:border-box}
+
+div {
+    z-index: -1;
+    background-color: #15DB95;
+}
+#slideshow {
+    background-color: #15DB95;
+}
+
+/* Slideshow container 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators 
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+*/
