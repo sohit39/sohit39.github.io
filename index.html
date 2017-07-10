@@ -9,6 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="myScripts.js"></script>
+	<script type="text/javascript" src="https://raw.github.com/dreamerslab/jquery.center/master/jquery.center.js"></script>
 	<script>
 		$(function() {
 			var pull 		= $('#pull');
@@ -34,6 +35,13 @@
     		});
 		});
 	</script>
+	<script type="text/javascript">
+        $(function(){
+
+            $('#center').center();
+
+        });
+    </script>
 </head>
 
 <body>
@@ -54,8 +62,8 @@
 		</nav>
 
     <header>
-        <h1>Mandala Vikalangula Samkshema Sangham</h1>
-        <h2>School for the Welfare of the Disabled</h2>
+        <div id="center" style="position:absolute;"><h1>Mandala Vikalangula Samkshema Sangham</h1>
+        <h2>School for the Welfare of the Disabled</h2></div>
     </header>
     
 		

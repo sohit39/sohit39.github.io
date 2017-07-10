@@ -78,7 +78,6 @@ h1::before {
   content: "";
   width: 80px;
   height: 80px;
-  margin: -20px 20px 470px 0;
   /* background: url(enso.svg); */
   background-repeat: no-repeat;
   background-size: 100%;
@@ -191,9 +190,6 @@ nav a#pull {
         font-size: 3.5em;
         padding:2px 2px;
     }
-    h1::before {
-        margin: 20px 20px 270px 0;
-    }
 
     iframe{
         width: 560px;
@@ -267,9 +263,6 @@ nav a#pull {
 
     header {
         height: 600px;
-    }
-    h1::before {
-        margin-bottom: 270px
     }
 
 }
