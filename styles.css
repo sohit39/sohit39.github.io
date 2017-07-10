@@ -246,6 +246,36 @@ nav a#pull {
     }
 }
 
+@media screen and (max-width: 400px){
+    #mission { 
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+    }
+    #school { 
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+    }
+    #costs {
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+    }
+     #donate {
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+    }
+     #founder {
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+    }
+     #contact {
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+    }
+
+     #awards {
+        padding: 10px 50px 20px 50px;
+        background-color: black;
+}
 
 /* Navigation CSS End */
 
