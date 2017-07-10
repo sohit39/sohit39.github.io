@@ -264,6 +264,14 @@ nav a#pull {
     #donate {
         padding: 10px 50px 20px 50px;
     }
+
+    header {
+        height: 600px;
+    }
+    h1::before {
+        margin-bottom: 270px
+    }
+
 }
 
 /* Navigation CSS End */
