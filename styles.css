@@ -237,14 +237,32 @@ nav a#pull {
         width:280px;
         height: 157.5px;
     }
-}
-
-@media screen and (max-width: 370px) {
     #mission {
         padding: 10px 50px 20px 50px;
     }
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.7em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #school {
+        padding: 10px 50px 20px 50px;
+    }
+
+    #awards {
+        padding: 10px 50px 20px 50px;
+    }
+    #costs {
+        padding: 10px 50px 20px 50px;
+    }
+    #founder {
+        padding: 10px 50px 20px 50px;
+    }
+    #donate {
+        padding: 10px 50px 20px 50px;
     }
 }
 
