@@ -69,7 +69,6 @@ h1 {
 }
 h2 {
     font-size: 1.5rem;
-    margin-top: 10px;
 }
 
 h1::before {
@@ -197,6 +196,10 @@ nav a#pull {
         margin: 20px 20px 270px 0;
     }
 
+    .test {
+        margin-bottom: 100px;
+    }
+
     iframe{
         width: 560px;
         height: 315px;
@@ -246,8 +249,13 @@ nav a#pull {
         font-size: 2.7em;
     }
 
+     h1::before {
+        margin: 20px 20px 230px 0;
+    }
+
     h2 {
         font-size: 1.5em;
+        margin: 20px 20px 230px 0;
     }
 
     #school {
