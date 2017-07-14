@@ -92,6 +92,16 @@ h1::before {
     float: right;
 }
 
+#bb {
+    float: left;
+}
+#home {
+    font-size: 1.6rem;
+}
+#home:hover {
+    background-color: transparent;
+}
+
 #t1:hover {
     color:white;
 }
@@ -115,7 +125,7 @@ ul.navColor {
     background-color: #152737;
 }
 
-ul.navColor li {float: left;}
+ul.navColor li {float: right;}
 
 ul.navColor li a {
     display: block;
@@ -180,7 +190,7 @@ nav a#pull {
 }
 
 
-@media screen and (max-width: 879px){
+@media screen and (max-width: 930px){
    /*.navColor { display: none;}*/
     ul.navColor li.right, 
     ul.navColor li {float: none;}
@@ -190,6 +200,10 @@ nav a#pull {
         height: 500px;
         font-size: 3.5em;
         padding:2px 2px;
+    }
+
+    #bb, #one {
+        display: none;
     }
 
     h1::before {
@@ -222,6 +236,7 @@ nav a#pull {
     position: fixed;
     top:0px;
     left: 0px;
+    text-align: center;
   }
   nav a#pull:after {
     content:"";
@@ -408,6 +423,16 @@ ul {
 b {
     font-weight: 500;
 }
+
+footer {
+    background-color: #152737;
+    padding: 20px;
+}
+span {
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 
 
