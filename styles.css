@@ -202,8 +202,8 @@ nav a#pull {
         padding:2px 2px;
     }
 
-    #bb, #one {
-        display: none;
+    #bb {
+        float: none;
     }
 
     h1::before {
@@ -247,9 +247,6 @@ nav a#pull {
     position: fixed;
     left: 15px;
     top: 10px;
-  }
-  #one {
-      margin-top: 30px;
   }
 }
 @media screen and (max-width: 600px){
