@@ -291,6 +291,10 @@ nav a#pull {
         height: 600px;
     }
 
+    p {
+        font-size: 0.98rem;
+    }
+
 }
 
 /* Navigation CSS End */
