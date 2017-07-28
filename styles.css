@@ -443,8 +443,9 @@ span {
     font-family: 'Roboto', sans-serif;
 }
 #paypal {
-    margin: auto;
-    width: 30%;
+    display:flex;
+     flex-flow: row wrap;
+    justify-content: center;
 }
 
 
