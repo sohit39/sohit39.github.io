@@ -433,7 +433,10 @@ span {
     font-size: .8rem;
     font-family: 'Roboto', sans-serif;
 }
-
+#paypal {
+    margin: auto;
+    width: 30%;
+}
 
 
 

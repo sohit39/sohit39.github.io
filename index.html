@@ -34,6 +34,17 @@
     		});
 		});
 	</script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-103445383-1', 'auto');
+			ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
@@ -209,7 +220,25 @@
 		State Bank of India <br> 
 		A/C No. 10849855083 <br>
 		Maharanipeta, Visakha </p>
-		<p>Add PayPal Here</p>
+		<p>Press on Donate Below</p>
+	<div id="paypal" >
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="9W577GUB4V7TE">
+		<table>
+		<tr><td><input type="hidden" name="on0" value="Donation">Donation</td></tr><tr><td><select name="os0">
+			<option value="Sponsor a Child">Sponsor a Child $215.00 SGD</option>
+			<option value="Donation">Donation $45.00 SGD</option>
+			<option value="Donation">Donation $50.00 SGD</option>
+			<option value="Donation">Donation $25.00 SGD</option>
+			<option value="Donation">Donation $10.00 SGD</option>
+		</select> </td></tr>
+		</table>
+		<input type="hidden" name="currency_code" value="SGD">
+		<input type="image" src="http://pngall.com/wp-content/uploads/2016/05/PayPal-Donate-Button-PNG-File.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+		</form>
+	</div>
     </section> 
 
 	 <section id="founder">
