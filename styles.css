@@ -345,12 +345,21 @@ td {
     padding: 5px 10px 0px 10px;
 }
 
-p {
+p, caption {
     font-size: 1.05rem;
     font-family: 'Roboto', sans-serif;
     line-height: 1.7rem;
     text-align: center;
     font-weight: 300;
+}
+
+#students {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.student {
+    width:430px;
 }
 
 .caption {
