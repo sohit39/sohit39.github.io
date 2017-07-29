@@ -362,6 +362,32 @@ p, caption {
     width:430px;
 }
 
+.im-checkout-btn {
+  background: #FFFF00;
+  /*background-image: -webkit-linear-gradient(top, #d6d603, #f0f000);
+  background-image: -moz-linear-gradient(top, #d6d603, #f0f000);
+  background-image: -ms-linear-gradient(top, #d6d603, #f0f000);
+  background-image: -o-linear-gradient(top, #d6d603, #f0f000);
+  background-image: linear-gradient(to bottom, #d6d603, #f0f000);*/
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 24px;
+  color: #000;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+    margin-top: 5px;
+  text-decoration: underline;
+  box-shadow: 3px 3px 3px 3px #000; 
+}
+#mojo {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+
+.im-checkout-btn:hover {
+  background:#fff;
+}
 .caption {
     font-size: 0.8rem;
     font-style: italic;
