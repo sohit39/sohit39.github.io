@@ -473,6 +473,19 @@ span {
      flex-flow: row wrap;
     justify-content: center;
 }
+#foot {
+    color:#fff;
+    font-size: 1.0rem;
+}
+#legal {
+    display:flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
+    text-align: center;
+    font-weight: 300;
+}
 
 
 
