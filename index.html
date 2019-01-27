@@ -11,6 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="myScripts.js"></script>
+	<script src="pdfobject.js"></script>
 	<script>
 		$(function() {
 			var pull 		= $('#pull');
@@ -61,13 +62,7 @@
 				<li class="nav active"><a href="#costs">Costs</a></li>
 				<li class="nav active"><a id="three" href="#awards">Achievements &amp; Awards</a></li>
 				<li class="nav active"><a id"two" href="#school">The School</a></li>
-				<li class="nav active"><a id="one" href="#mission">Mission</a></li>
-			
-				
-				
-				
-				
-				
+				<li class="nav active"><a id="one" href="#mission">Mission</a></li>			
 			</ul>
 			<a href="#" id="pull"></a>
 		</nav>
@@ -102,6 +97,10 @@
 			<img src="Mission2.jpg" alt="Studying Kids" title="Studying Kids" width="300px" height="225px">
 		</div>
 
+		<h4>Extended Mission</h4>
+		<div id="MissionProfile"></div>
+		<script>PDFObject.embed("SchoolMission.pdf", "#MissionProfile");</script>
+
     </section> 
 
     <section id="school">
@@ -113,6 +112,10 @@
             The school, founded in 1998 with roughly 30 students, has now expanded 
 			to have over 300. 
 		</p>
+
+		<h4>Extended Profile</h4>
+		<div id="OrgProfile"></div>
+		<script>PDFObject.embed("OrgProfile.pdf", "#OrgProfile");</script>
 		<h3> Students </h3> 
 		<div id="students"> 
 			<div class="student">
@@ -141,39 +144,6 @@
 		<p> In order to continue MVSS's mission, and provide for more children like Sai and Appala Raju, it would be much appreciated to <a href="#donate" class="link"> donate</a> whatever amount you can. 
 
     </section>
-
-	<!--Slideshow
-		<div class="slideshow-container">
-			<div class="mySlides fade">
-				<div class="numbertext">1 / 3</div>
-				<img src="test.jpg" style="width:100%">
-				<div class="text">Caption Text</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">2 / 3</div>
-				<img src="HeaderBackground2.jpg" style="width:100%">
-				<div class="text">Caption Two</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">3 / 3</div>
-				<img src="HeadBackground.jpg" style="width:100%">
-				<div class="text">Caption Three</div>
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
-
-		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-			<span class="dot" onclick="currentSlide(3)"></span> 
-		</div>
-		
-	-->
 
     <section id="awards">
         <h3>Achievements &amp; Awards</h3>
@@ -340,7 +310,13 @@
 					presented to him by then president Shri APJ Abdul Kalam.
 				</li>
 				<li>More awards</li>
-			</ul> 
+			</ul>
+		
+			<h4>Extended Profile</h4>
+			<div id="PatnaikProfile"></div>
+			<script>PDFObject.embed("Patnaik.pdf", "#PatnaikProfile");</script>
+
+
     </section> 
 
     <section id="contact">
