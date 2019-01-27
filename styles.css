@@ -487,7 +487,21 @@ span {
     font-weight: 300;
 }
 
-#PatnaikProfile, #OrgProfile, #MissionProfile {
+#PatnaikProfile{
+    height: 650px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#OrgProfile{
+    height: 650px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#MissionProfile {
     height: 650px;
     width: 500px;
     margin-left: auto;
